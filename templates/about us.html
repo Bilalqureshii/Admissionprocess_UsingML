@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - DipEduGuide</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='about us.css') }}">
+</head>
+
+<body>
+  <!-- Navigation Bar (You can add your navigation bar here) -->
+  <header>
+
+    <div class="logo">
+      <h2 class="logoa">DipEduGuide</h2>
+    </div>
+    <div class="menutoggle" onclick="tooglemenu();">
+    </div>
+    <div class="navigation-style-1"></div>
+    <div class="navigation-style-2"></div>
+    <div class="navigation-style-3"></div>
+    <div class="navigation">
+      <ul>
+        <a href="{{ url_for('home') }}">
+          <li><input type="button" value="Home"></li>
+        </a>
+
+        <a href="{{ url_for('result') }}">
+          <li>
+            <input type="button" value="Resultanalyser">
+          </li>
+        </a>
+
+        <a href="{{ url_for('colleges') }}">
+          <li><input type="button" value="Colleges"></li>
+        </a>
+
+        <a href="{{ url_for('admission_process') }}">
+          <li><input type="button" value="Admission Process"></li>
+        </a>
+
+        <a href="{{ url_for('scholarship') }}">
+          <li><input type="button" value="Scholarship"></li>
+        </a>
+        <a href="{{ url_for('about_us') }}">
+          <li>
+            <input type="button" value="About Us">
+          </li>
+        </a>
+      </ul>
+    </div>
+  </header>
+  <div class="container">
+    <section class="about-section">
+      <div class="about-content">
+        <h2>Our Mission</h2>
+        <p>
+          At DipEduGuide, our mission is to empower students like you to make informed decisions about your education.
+          We understand that choosing the right path for your future can be a challenging task, and that's why we are
+          here to simplify the process.
+        </p>
+        <p>
+          Our primary goals include:
+        </p>
+        <ul>
+          <li><strong>SSC Result Analysis:</strong> We offer a powerful tool that allows you to analyze your SSC
+            (Secondary School Certificate) results. With our user-friendly interface, you can gain insights into your
+            performance, identify areas of improvement, and plan your educational journey accordingly.</li>
+          <li><strong>Maharashtra College Directory:</strong> Explore our extensive database of colleges in Maharashtra.
+            Whether you're interested in engineering, medicine, arts, or any other field, we provide detailed
+            information about colleges, including courses offered, admission criteria, and contact details.</li>
+          <li><strong>Admission Process Guidance:</strong> Navigating the college admission process can be overwhelming.
+            We provide step-by-step guidance to simplify the application process, understand admission requirements, and
+            maximize your chances of getting into your dream college.</li>
+          <li><strong>Scholarship Opportunities:</strong> Education should be accessible to all. We offer information on
+            various scholarships available to students in Maharashtra, helping you secure financial aid to pursue your
+            academic goals.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="why-choose-section">
+      <h2>Why Choose DipEduGuide?</h2>
+      <ul>
+        <li><strong>Comprehensive Information:</strong> Our website is a one-stop destination for all your educational
+          needs. We strive to provide you with accurate and up-to-date information on colleges, courses, and admission
+          procedures.</li>
+        <li><strong>User-Friendly Tools:</strong> Our user-friendly tools and features are designed to make your
+          educational journey smoother. Analyze your SSC results, search for colleges, and stay informed about
+          scholarship opportunities effortlessly.</li>
+        <li><strong>Empowering Your Future:</strong> We believe that education is the key to a brighter future. By
+          empowering you with the right knowledge and resources, we aim to help you achieve your academic and career
+          aspirations.</li>
+        <li><strong>Community and Support:</strong> Join our community of students, educators, and experts who are
+          passionate about education. Connect with others, ask questions, and find the support you need to succeed.</li>
+      </ul>
+    </section>
+  </div>
+  <!-- Footer (You can add your footer here) -->
+</body>
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+
+</html>

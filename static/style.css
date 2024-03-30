@@ -1,0 +1,72 @@
+/* Store this code in 'style.css' file inside the 'static' folder*/
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url('/static/img/7618679.jpg');
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.header1{
+  padding: 5px 130px;
+  width: 100px;
+  height: 50px;
+  background-color: #5ae4a8; 
+  font-size:bold ;
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+}
+.border1{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.border{
+  padding: 80px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height:360px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #ffffffe8;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 40px;
+  background-color: #5ae4a8; 
+  color: #000000;
+  font-style: oblique;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.textbox{
+  padding: 10px 40px;
+  background-color: #5ae4a8; 
+  color: #000000e0;
+  border-radius: 10px;
+}
+  
+::placeholder {
+  color: #000000;
+  opacity: 1;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.word{
+  
+  font-weight: bold;
+}
+
+.bottom{
+  color: #000000;
+  font-style: oblique;
+  font-weight: bold;
+}

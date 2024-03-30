@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahadbt Scholarship</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='scholar.css') }}">
+</head>
+
+<body>
+  <!-- Navigation Bar (You can add your navigation bar here) -->
+  <header>
+
+    <div class="logo">
+      <h2 class="logoa">DipEduGuide</h2>
+    </div>
+    <div class="menutoggle" onclick="tooglemenu();">
+    </div>
+    <div class="navigation-style-1"></div>
+    <div class="navigation-style-2"></div>
+    <div class="navigation-style-3"></div>
+    <div class="navigation">
+      <ul>
+        <a href="{{ url_for('home') }}">
+          <li><input type="button" value="Home"></li>
+        </a>
+
+        <a href="{{ url_for('result') }}">
+          <li>
+            <input type="button" value="Resultanalyser">
+          </li>
+        </a>
+
+        <a href="{{ url_for('colleges') }}">
+          <li><input type="button" value="Colleges"></li>
+        </a>
+
+        <a href="{{ url_for('admission_process') }}">
+          <li><input type="button" value="Admission Process"></li>
+        </a>
+
+        <a href="{{ url_for('scholarship') }}">
+          <li><input type="button" value="Scholarship"></li>
+        </a>
+        <a href="{{ url_for('about_us') }}">
+          <li>
+            <input type="button" value="About Us">
+          </li>
+        </a>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section id="introduction">
+      <h1>Mahadbt Scholarship</h1>
+      <h2>Introduction</h2>
+      <div class="container1">
+        <p>
+          The Maharashtra Direct Benefit Transfer Scholarship for 2023 is a
+          beneficial scholarship scheme offered by the Maharashtra state
+          government. This webpage provides essential information about the
+          scholarship, including eligibility criteria, required documents, and
+          application procedures.
+        </p>
+      </div>
+    </section>
+
+    <section id="details">
+      <h2>Details of Mahadbt Scholarship</h2>
+      <div class="container1">
+        <ul>
+          <li><strong>Name:</strong> Mahadbt Scholarship 2023</li>
+          <li><strong>Launched by:</strong> Maharashtra Government</li>
+          <li><strong>Beneficiaries:</strong> Students</li>
+          <li><strong>Objective:</strong> Providing Scholarships</li>
+        </ul>
+      </div>
+      <div class="container1">
+        <p>
+          Official Website:
+          <a href="https://mahadbtmahait.gov.in/" target="_blank">https://mahadbtmahait.gov.in/</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="eligibility">
+      <h2>Eligibility Criteria</h2>
+      <div class="container1">
+        <h3>EBC Department</h3>
+        <p>
+          Financial assistance is provided under this scholarship scheme to
+          students belonging to EBC categories who are
+          pursuing government-approved courses. Check the eligibility criteria
+          for this scheme.
+        </p>
+      </div>
+      <div class="container1">
+        <h3>Minority Development Department</h3>
+        <p>
+          Scholarships are offered to minority community students pursuing
+          higher and professional courses. Three types of scholarships are
+          available under this scheme. Verify the eligibility criteria before
+          applying.
+        </p>
+      </div>
+    </section>
+
+    <section id="documents">
+      <h2>Documents Required</h2>
+      <div class="container1">
+        <ul>
+          <li>Income Certificate (Provided by Tahsildar)</li>
+          <li>Cast Certificate</li>
+          <li>Cast Validity Certificate</li>
+          <li>Mark sheet for last appeared examination</li>
+          <li>Mark sheet for SSC or HSC</li>
+          <li>Father date Certificate (if required)</li>
+          <li>Hostel Certificate (if required)</li>
+          <li>CAP round allotment letter</li>
+          <li>Aadhar card</li>
+          <li>Ration card</li>
+          <li>Disability certificate</li>
+          <li>Bank account details</li>
+          <li>Residence proof</li>
+          <li>Birth certificate</li>
+          <li>Passport size photograph</li>
+          <li>Mobile number</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="registration">
+      <h2>Registration Procedure</h2>
+      <div class="container1">
+        <ol>
+          <li>Visit the Official Website</li>
+          <li>Click the New Registration button</li>
+          <li>Enter Aadhaar Number</li>
+          <li>Click on the "Send OTP" button</li>
+          <li>Login using your credentials</li>
+          <li>Choose the Scheme</li>
+          <li>Fill the Application Form</li>
+          <li>Upload the documents</li>
+          <li>Submit the Maha DBT Scholarship Application Form</li>
+          <li>Take a printout</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="login">
+      <h2>Applicant Login</h2>
+      <div class="container1">
+        <ol>
+          <li>Go to the official website of Mahadbt Scholarship</li>
+          <li>On the homepage, click on the post-matric scholarship link</li>
+          <li>Now click on the applicant login</li>
+          <li>
+            On this new page, enter your username, password, and captcha code
+          </li>
+          <li>Click on the login</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="download">
+      <h2>Download Guidelines and Rules</h2>
+      <div class="container1">
+        <ol>
+          <li>Go to the official website of MHA DBT</li>
+          <li>On the homepage, click on the post-matric scholarship link</li>
+          <li>Now click on guidelines and rules</li>
+          <li>A new page will appear before you</li>
+          <li>
+            On this new page, guidelines and rules will appear before you in PDF
+            format
+          </li>
+          <li>
+            You have to click on the download option in order to download it
+          </li>
+        </ol>
+      </div>
+    </section>
+    <h2>For more details about scholarship watch given videos<h2><br>
+
+        <div class="container1">
+          <p>
+          <h3>How to fill apply FRESH Mahadbt scholarship form PART-1</h3>
+          </p>
+          <iframe width="360" height="215" src="https://www.youtube-nocookie.com/embed/1Y7TLI8ge2o?si=Io3vN3lIflDzh59E"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="container1">
+          <p>
+          <h3>How to fill apply FRESH Mahadbt scholarship form PART-2</h3>
+          </p>
+          <iframe width="360" height="215" src="https://www.youtube-nocookie.com/embed/yEORAFhQiIs?si=kVRFSfUtejNESChC"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          </iframe>
+        </div>
+  </main>
+</body>
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+
+</html>

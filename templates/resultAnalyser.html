@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}" />
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+          <h2 class="logoa">DipEduGuide</h2>
+        </div>
+        <div class="menutoggle" onclick="tooglemenu();">
+        </div>
+        <div class="navigation-style-1"></div>
+        <div class="navigation-style-2"></div>
+        <div class="navigation-style-3"></div>
+        <div class="navigation">
+          <ul>
+            <a href="{{ url_for('home') }}">
+              <li><input type="button" value="Home"></li>
+            </a>
+    
+            <a href="{{ url_for('result') }}">
+              <li>
+                <input type="button" value="Resultanalyser">
+              </li>
+            </a>
+    
+            <a href="{{ url_for('colleges') }}">
+              <li><input type="button" value="Colleges"></li>
+            </a>
+    
+            <a href="{{ url_for('admission_process') }}">
+              <li><input type="button" value="Admission Process"></li>
+            </a>
+    
+            <a href="{{ url_for('scholarship') }}">
+              <li><input type="button" value="Scholarship"></li>
+            </a>
+            <a href="{{ url_for('about_us') }}">
+              <li>
+                <input type="button" value="About Us">
+              </li>
+            </a>
+          </ul>
+        </div>
+      </header>
+    <section class="hero-section">
+        <div class="hero">
+            <div class="container">
+                <h2>Result analyser</h2>
+                <p>
+                    The Result Analyser is a powerful tool designed to assist students in finding colleges based on
+                    their
+                    SSC (Secondary School Certificate) percentage. This tool leverages machine learning to match a
+                    student's
+                    academic performance with the admission criteria of various colleges.
+                </p>
+            </div>
+
+            <div class="container">
+                <p>
+                    <h2>How it Works: </h2><br>
+                    1. Input SSC Percentage: The student begins by entering their SSC percentage into the provided
+                    field.
+                    <br>
+                    2. Algorithmic Matching: Behind the scenes, a sophisticated machine learning model processes the
+                    input.
+                    It uses historical data to identify colleges whose cutoff percentages align with the student's
+                    performance. <br>
+                    3. Suggested Colleges: The Result Analyzer then displays a list of colleges along with the available
+                    branches that meet the criteria. This provides students with valuable insights into suitable options
+                    for
+                    further education.
+                </p>
+            </div>
+            <div class="form1">
+                <form action="/resultAnalyser" method="post" class="form1">
+                    <label for="ssc_percentage">Enter SSC Percentage:</label> &nbsp;
+                    <input type="number" id="ssc_percentage" name="ssc_percentage" min="0.00" max="100.00">
+                    <br><br>
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+                <section class="result-section">
+                    <div class="result-container">
+
+                        {% if result_data %}
+                        <h2>Colleges that match your criteria:</h2>
+                        <ul>
+                            {% for college in result_data %}
+                            <li>
+                                <strong>College Name:</strong> {{ college['CollegeName'] }}<br>
+                                <strong>Branches Available:</strong>
+                                <ul>
+                                    {% for branch in college['Branches'] %}
+                                    <li>{{ branch }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <p>{{ message }}</p>
+                        {% endif %}
+
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+
+</html>

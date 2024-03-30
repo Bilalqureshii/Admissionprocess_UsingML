@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+
+<body>
+  <header>
+
+    <div class="logo">
+      <h2 class="logoa">DipEduGuide</h2>
+      <a class="submit" href="{{ url_for('register') }}"><strong>Signup here!</strong></a>
+    </div>
+    <div class="menutoggle" onclick="tooglemenu();">
+    </div>
+    <div class="navigation-style-1"></div>
+    <div class="navigation-style-2"></div>
+    <div class="navigation-style-3"></div>
+    <div class="navigation">
+      <ul>
+        <a href="{{ url_for('home') }}">
+          <li><input type="button" value="Home"></li>
+        </a>
+
+        <a href="{{ url_for('result') }}">
+          <li>
+            <input type="button" value="Resultanalyser">
+          </li>
+        </a>
+
+        <a href="{{ url_for('colleges') }}">
+          <li><input type="button" value="Colleges"></li>
+        </a>
+
+        <a href="{{ url_for('admission_process') }}">
+          <li><input type="button" value="Admission Process"></li>
+        </a>
+
+        <a href="{{ url_for('scholarship') }}">
+          <li><input type="button" value="Scholarship"></li>
+        </a>
+        <a href="{{ url_for('about_us') }}">
+          <li>
+            <input type="button" value="About Us">
+          </li>
+        </a>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64 " id="about">
+    <div class="container">
+
+      <h1 class="h2o">Welcome to DipEduGuide</h1>
+      <h3>Your Gateway to Educational Excellence:</h3>
+      <section class="intro">
+
+        <p>Are you a student aiming for success in Maharashtra's educational landscape? Look no further! DipEduGuide is
+          your trusted companion on the road to academic achievement. We are here to simplify your educational journey,
+          offering valuable insights and resources at your fingertips.<br>
+          Your educational journey starts here! DipEduGuide is your go-to resource for all things related to higher
+          education in Maharashtra. From analyzing your SSC results to discovering colleges, understanding the admission
+          process, and finding scholarship opportunities, we've got it all covered. Empower your future with
+          DipEduGuide.</p>
+    </div>
+    <div class="container">
+      <h2><strong> Result Analyser</strong></h2>
+      <p>Introducing our Result Analyser
+
+        Effortlessly predict outcomes from percentages with our cutting-edge tool. Just input the percentage, and get
+        instant, accurate results. Perfect for education, market research, and performance evaluation. Make informed
+        decisions quickly and confidently. Try it now!</p> <br><br>
+        <a href="{{ url_for('result') }}">Learn More</a>
+    </div>
+    <div class="container">
+      <h2><strong> Colleges</strong></h2>
+      <p>education meets innovation! Our diverse range of colleges and
+        courses are designed to fuel your passion and propel your career forward. With a visionary mission focused on
+        excellence and innovation, we empower students to thrive in today's dynamic world.
+      </p> <br><br>
+      <a href="{{ url_for('colleges') }}">Learn More</a>
+    </div>
+    <div class="container">
+      <h2><strong> Admision Process</strong></h2>
+      <p>Admission Process! To join our community, simply submit an application detailing your
+        container's specifications and purpose. After review, approved containers will be placed in designated locations
+        within our community, followed by an orientation session to acquaint you with our guidelines and resources. </p><br><br>
+        <a href="{{ url_for('admission_process') }}">Learn More</a>
+      </div>
+    <div class="container">
+      <h2><strong>Scholarship</strong> </h2>
+      <p>Scholarship, where diversity and economic equality are at the forefront. Within this hub,
+        you'll find a wealth of opportunities tailored to support minority groups and economically backward communities
+        (EBCs).</p><br><br>
+        <a href="{{ url_for('scholarship') }}">Learn More</a>
+    </div>
+    <div class="container">
+      <h2><strong> About Us</strong></h2>
+      <p>Dip EduGuide is your comprehensive educational partner, dedicated to empowering students, educators, and
+        institutions alike. With a mission to foster academic excellence and personal growth, we offer a wide array of
+        services and resources tailored to meet the diverse needs of the learning community.</p><br><br>
+        <a href="{{ url_for('about_us') }}">Learn More</a>
+    </div>
+    </section>
+
+    <br><b></b>
+  </div>
+  <footer>
+    <div class="contact-info">
+      <div>
+        <h3>Contact Us with Social Media</h3>
+        <div class="socil">
+          <ol>
+            <a href="https://www.instagram.com/dip_edu_guide/" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;">
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <a href="https://www.facebook.com/DipEdu Guide" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" style="width: 40px; height: 40px;">
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+            
+      
+            <a class="twitter common" href="https://twitter.com/dip_edu91437" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+              viewBox="0 0 512 512">
+              <path
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+          </svg></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          <a href="https://www.linkedin.com/in/dipeduguide-undefined-34556a301/    " target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 40px; height: 40px;">
+          </a>
+          
+          
+          
+        </div>
+        <p>Email: dipeduguide@gmail.com</p>
+        
+      </div>
+      
+  </footer>
+</body>
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+
+</html>

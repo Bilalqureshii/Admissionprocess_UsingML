@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='collages.css') }}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Collage Page</title>
+</head>
+
+<body>
+    <!-- Navigation Bar (You can add your navigation bar here) -->
+    <header>
+  
+      <div class="logo">
+        <h2 class="logoa">DipEduGuide</h2>
+      </div>
+      <div class="menutoggle" onclick="tooglemenu();">
+      </div>
+      <div class="navigation-style-1"></div>
+      <div class="navigation-style-2"></div>
+      <div class="navigation-style-3"></div>
+      <div class="navigation">
+        <ul>
+          <a href="{{ url_for('home') }}">
+            <li><input type="button" value="Home"></li>
+          </a>
+  
+          <a href="{{ url_for('result') }}">
+            <li>
+              <input type="button" value="Resultanalyser">
+            </li>
+          </a>
+  
+          <a href="{{ url_for('colleges') }}">
+            <li><input type="button" value="Colleges"></li>
+          </a>
+  
+          <a href="{{ url_for('admission_process') }}">
+            <li><input type="button" value="Admission Process"></li>
+          </a>
+  
+          <a href="{{ url_for('scholarship') }}">
+            <li><input type="button" value="Scholarship"></li>
+          </a>
+          <a href="{{ url_for('about_us') }}">
+            <li>
+              <input type="button" value="About Us">
+            </li>
+          </a>
+        </ul>
+      </div>    </header>
+  <div class="container">
+        <div class="card">
+            <h2>Kalsekar Polytechnic</h2>
+            <p> 
+                location: Plot No. 2 & 3, Khanda Gaon, New Panvel, Navi Mumbai, Maharashtra 410206<br> <br>
+                Deadline: September 30, 2023</p><br>
+            <a href="{{ url_for('kalsekar') }}">Learn More</a> 
+        </div>
+        <div class="card">
+            <h2>Bharti Vidhiyapeeth Polytechnic</h2>
+            <p> 
+                location:  Sector 7, CBD Belapur, Navi Mumbai, Maharashtra 410210<br> <br> <br>
+                Deadline: September 30, 2023</p> <br> 
+            <a href="{{ url_for('bhartividhiyapeeth') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Chatarpati Shivaji Polytechnic</h2>
+            <p> 
+                location: SATEVADI CORNER, Pusegaon Vaduj Rd, Maharashtra 431123<br> <br>
+                Deadline: September 30, 2023</p> <br>
+            <a href="{{ url_for('csp') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Father Agnel Polytechnic Vashi</h2>
+            <p> 
+                location: Sector 9A, Vashi, Navi Mumbai, Maharashtra 400703<br> <br>
+                Deadline: September 30, 2023</p> <br>
+            <a href="{{ url_for('fatheragnel') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Goverment polytechnic Mumbai</h2>
+            <p> 
+                location:  49, Ali Yavar Jung Marg, Kherwadi, Bandra East, Mumbai, Maharashtra 400051<br> <br>
+                Deadline: September 30, 2023</p> <br>
+            <a href="{{ url_for('gpmumbai') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Goverment Polytechnic Thane</h2>
+            <p> 
+                location: Phadke Road, opp. Bharat Gears Ltd, Phadkepada, Mumbra, Thane, Maharashtra 400612<br> <br>
+                Deadline: September 30, 2023</p> <br>
+            <a href="{{ url_for('gpthane') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Kj Somaiya Polytechnic</h2>
+            <p> 
+                location: Vidyanagar, VidyaVihar East, Near Somaiya Running Track, Mumbai, Maharashtra 400077<br> <br>
+                Deadline: September 30, 2023</p> <br>
+            <a href="{{ url_for('kjsomaya') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>M.H Saboo Siddik Polytechnic</h2>
+            <p> 
+                location:  8, Shepherd Rd, New Nagpada, Byculla, Mumbai, Maharashtra 400008<br> <br>
+                Deadline: September 30, 2023</p> <br>
+            <a href="{{ url_for('mhsaboosiddik') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Pillai HOC Polytechnic</h2>
+            <p> 
+                location: V5VG+5P2, HOC Colony, Rasayani, Maharashtra 410207<br> <br>
+                Deadline: September 30, 2023</p> <br>
+            <a href="{{ url_for('pillaihoc') }}">Learn More</a>
+        </div>
+        <div class="card">
+            <h2>Thakur Polytechnic</h2>
+            <p>
+                location: Kandivali, Thakur Complex, Kandivali East, Mumbai, Maharashtra 400101<br>
+                Deadline: "September 30, 2023", </p> <br>
+            <a href="{{ url_for('thakur') }}">Learn More</a>
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+</html>
