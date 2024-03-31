@@ -12,9 +12,9 @@ app = Flask(__name__)
 
 app.secret_key = 'your secret key'
 
-app.config['MYSQL_HOST'] = 'Qureshi'
+app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Qureshi@123'
+app.config['MYSQL_PASSWORD'] = 'Abc@123'
 app.config['MYSQL_DB'] = 'sys'
 
 mysql = MySQL(app)
@@ -166,4 +166,4 @@ def csp():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
